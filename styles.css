@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --dark-blue: hsl(217, 28%, 15%);
+    --background: hsl(218, 28%, 13%);
+    --footer: hsl(216, 53%, 9%);
+    --testimonial: hsl(219, 30%, 18%);
+    --cyan: hsl(176, 68%, 64%);
+    --blue: hsl(198, 60%, 50%);
+    --error-red: hsl(0, 100%, 63%);
+    --white: hsl(0, 0%, 100%);
+}
+body{
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    background: var(--dark-blue);
+    padding: 50px;
+}
+.navbar-brand {
+    cursor: pointer;
+}
+nav li {
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+nav li a{
+    text-decoration: none;
+    opacity: 0.7;
+    color: var(--white);
+    font-family: 'Raleway' , sans-serif;
+}
+nav li a:hover{
+    color: var(--white);
+    opacity: 1;
+    border-bottom: 1px solid var(--white);
+}
+section {
+    background: var(--background);
+    color: var(--white);
+}
+.main {
+    font-family: 'Raleway' , sans-serif;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 700px;
+    height: 100%;
+}
+.main h2 {
+    font-weight: 700;
+}
+.main p {
+    font-weight: 400;
+    margin: 16px 100px;
+}
+.main a {
+    color: var(--white);
+    text-decoration: none;
+    background: repeating-linear-gradient(50deg, var(--cyan), var(--blue) 250px);
+    font-weight: 700;
+    padding: 15px 70px;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+.main a:hover{
+    color: var(--white);
+    background: var(--cyan);
+}
+.services {
+    margin-top: 100px;
+}
+.services p{
+    padding: 0px 101px 0px 150px;
+}
+.productive a{
+    text-decoration: none;
+    color: var(--cyan);
+}
+.productive a:hover {
+    color: var(--white);
+    border-bottom: 1px solid var(--white);
+}
+.container {
+    margin-top: 150px;
+}
+.testimonial .row img {
+    height: 30px;
+    width: 30px;
+    border-radius: 500px;
+}
+.testimonial .first, .second, .third {
+    background: hsl(217, 28%, 15%);
+    padding: 30px;
+}
+.testimonial img{
+    margin-top: 10px;
+}
+.testimonial h6,p {
+    margin-bottom: 0px;
+}
+.info .about{
+    margin: 200px 200px 0px 200px;
+    background: hsl(217, 28%, 15%);
+}
+
+.about form .email{
+    border-radius: 50px;
+    width: 50%;
+    padding: 15px 35px;
+    margin-right: 50px;
+}
+.about form .email:focus {
+    border: none;
+}
+.about .btn{
+    color: var(--white);
+    text-decoration: none;
+    background: repeating-linear-gradient(50deg, var(--cyan), var(--blue) 250px);
+    font-weight: 700;
+    padding: 15px 70px;
+    border-radius: 30px;
+}
+.about .btn:hover{
+    color: var(--white);
+    background: var(--cyan);
+}
+.info h1 {
+    padding-top: 25px;
+}
+.info p {
+    padding: 15px;
+    margin: 0px 80px 10px 80px;
+}
+.info .error{
+    padding: 0px 10px;
+    margin-left: 80px;
+    color: var(--error-red);
+}
+footer {
+    padding: 0px 100px 00px 100px;
+    background: var(--footer);
+    color: var(--white);
+    margin-top: -10px;
+}
+.content {
+    padding: 50px;
+}
+.content .img, .location, .email, .phone{
+    display: -webkit-inline-box;
+}
+.content .row  {
+    padding-left: 0px;
+}
+.content p {
+    margin-left: 10px;
+}
+.content .intro {
+    padding-left: 50px;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    padding: 5px;
+}   
+footer ul li a{
+    opacity: 0.7;
+    color: white;
+    text-decoration: none;
+}
+footer ul li a:hover {
+    opacity: 1;
+    color: var(--white);
+}
+.content i {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+}
+.content i:hover {
+    border: 1px solid cyan;
+    color: cyan;
+    opacity: 1;
+}
